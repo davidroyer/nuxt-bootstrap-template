@@ -34,7 +34,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: `${SiteUrl}/Share2.png'}`
+        content: `${SiteUrl}/Share2.png`
       },
       { hid: 'twitter:title', name: 'twitter:title', content: 'title here' },
       {
@@ -45,7 +45,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: `${SiteUrl}/Share2.png'}`
+        content: `${SiteUrl}/Share2.png`
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
