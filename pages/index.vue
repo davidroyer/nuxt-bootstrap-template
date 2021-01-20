@@ -20,7 +20,7 @@ export default {
     const mountains = await $axios.$get('/mountains')
     const rivers = await $axios.$get('/rivers')
     return { mountains, rivers }
-  },
+  }
 }
 </script>
 

@@ -20,3 +20,12 @@ FYI: `undefined` doesn't work. It has to be `null`.
 
 - I believe to get the icons built just put the icon I want to use in the
   `static` directory with the name of `icon.png`.
+
+  NOTE: Don't know if this works the same way for the Vue CLI plugin
+
+---
+
+## Fetch/AsyncData
+
+Since `fetch` has been modified to basically serve a new purpose, the way you
+used it before to update the state on a route should now happen in middleware.
