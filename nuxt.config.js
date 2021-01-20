@@ -1,10 +1,19 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
+
+  // ssr: false,
+
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-bootstrap-template',
+    title: null,
+    titleTemplate: (titleChunk) => {
+      // If undefined or blank then we don't need the hyphen
+      return titleChunk
+        ? `${titleChunk} - Nuxt BootStrap Template`
+        : 'Nuxt BootStrap Template'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -47,6 +56,10 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
+
+  bootstrapVue: {
+    icons: true,
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
