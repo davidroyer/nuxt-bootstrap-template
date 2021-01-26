@@ -91,7 +91,7 @@ export default {
       {
         title: siteTitle,
         description: siteDescription,
-        url: 'https://nuxtstraper.netlify.app',
+        url: 'https://dev--nuxtstraper.netlify.app',
         img: '/share.png',
         twitter: '@DavidRoyer_'
       }
