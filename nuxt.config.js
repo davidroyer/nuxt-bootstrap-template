@@ -93,7 +93,8 @@ export default {
         description: siteDescription,
         url: 'https://dev--nuxtstraper.netlify.app',
         img: '/share.png',
-        twitter: '@DavidRoyer_'
+        twitter: '@DavidRoyer_',
+        twitter_card: 'summary_large_image'
       }
     ]
   ],
