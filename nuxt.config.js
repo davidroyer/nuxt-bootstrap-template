@@ -93,8 +93,7 @@ export default {
         description: siteDescription,
         url: siteUrl,
         img: `${siteUrl}/share.png`,
-        twitter: '@DavidRoyer_',
-        twitter_card: 'summary_large_image'
+        twitter: '@DavidRoyer_'
       }
     ]
   ],

@@ -29,3 +29,8 @@ FYI: `undefined` doesn't work. It has to be `null`.
 
 Since `fetch` has been modified to basically serve a new purpose, the way you
 used it before to update the state on a route should now happen in middleware.
+
+## nuxt-social-meta Module
+
+- Docs/articles seem are wrong. I don't believe `img` cannot be a relative URL
+  but needs to be the full URL.
