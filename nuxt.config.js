@@ -1,7 +1,11 @@
-const SiteUrl =
+// eslint-disable-next-line no-unused-vars
+const siteUrl =
   process.env.NODE_ENV === 'production'
     ? 'https://nuxtstraper.netlify.app'
     : 'http://localhost:3000'
+
+const siteTitle = `Nuxt BootStrap Template`
+const siteDescription = `A Nuxt.js site to work on best practices and approaches for Nuxt sites`
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -22,31 +26,31 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:site_name', content: 'title here' },
-      { hid: 'og:title', property: 'og:title', content: 'title here' },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: 'description here'
-      },
-      {
-        hid: 'og:image',
-        property: 'og:image',
-        content: `${SiteUrl}/Share2.png`
-      },
-      { hid: 'twitter:title', name: 'twitter:title', content: 'title here' },
-      {
-        hid: 'twitter:description',
-        name: 'twitter:description',
-        content: 'description here'
-      },
-      {
-        hid: 'twitter:image',
-        name: 'twitter:image',
-        content: `${SiteUrl}/Share2.png`
-      }
+      { hid: 'description', name: 'description', content: siteDescription }
+      // { property: 'og:type', content: 'website' },
+      // { property: 'og:site_name', content: 'title here' },
+      // { hid: 'og:title', property: 'og:title', content: 'title here' },
+      // {
+      //   hid: 'og:description',
+      //   property: 'og:description',
+      //   content: 'description here'
+      // },
+      // {
+      //   hid: 'og:image',
+      //   property: 'og:image',
+      //   content: `${siteUrl}/Share2.png`
+      // },
+      // { hid: 'twitter:title', name: 'twitter:title', content: 'title here' },
+      // {
+      //   hid: 'twitter:description',
+      //   name: 'twitter:description',
+      //   content: 'description here'
+      // },
+      // {
+      //   hid: 'twitter:image',
+      //   name: 'twitter:image',
+      //   content: `${siteUrl}/Share2.png`
+      // }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
@@ -80,7 +84,18 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+
+    [
+      'nuxt-social-meta',
+      {
+        title: siteTitle,
+        description: siteDescription,
+        url: 'https://nuxtstraper.netlify.app',
+        img: '/share.png',
+        twitter: '@DavidRoyer_'
+      }
+    ]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
