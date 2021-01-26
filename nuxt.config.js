@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 const siteUrl =
   process.env.NODE_ENV === 'production'
-    ? 'https://nuxtstraper.netlify.app'
+    ? 'https://dev--nuxtstraper.netlify.app'
     : 'http://localhost:3000'
 
 const siteTitle = `Nuxt BootStrap Template`
@@ -91,8 +91,8 @@ export default {
       {
         title: siteTitle,
         description: siteDescription,
-        url: 'https://dev--nuxtstraper.netlify.app',
-        img: '/share.png',
+        url: siteUrl,
+        img: `${siteUrl}/share.png`,
         twitter: '@DavidRoyer_',
         twitter_card: 'summary_large_image'
       }
