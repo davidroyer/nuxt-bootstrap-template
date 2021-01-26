@@ -27,9 +27,9 @@ export default {
 
   head() {
     return {
-      title: this.river.title,
+      title: this.river.title
     }
-  },
+  }
 }
 </script>
 
