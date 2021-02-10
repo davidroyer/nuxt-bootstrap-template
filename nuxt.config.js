@@ -111,7 +111,7 @@ export default {
       lang: 'en'
     },
     icon: {
-      source: './static/app-icon.png'
+      source: './static/dr-icon.png'
     }
   },
 
